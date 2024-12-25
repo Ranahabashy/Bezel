@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #787878;
+}
+ .line-nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+   padding: 0%;
+   margin: 0;
+} 
+
+
+.navbar a span{
+    width: 10px ;
+    left: 95px;
+    top: 30px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00c3da;
+}
+.line{
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+line-height: 60px;
+
+}
+ .navbar{
+    background-color: #ccc;
+ }
+
+ .navbar .active{
+    color: #787878 !important;  
+ }
+.icons{
+    font-size: 12px;
+}
+.navbar ul li{
+    font-size: 13px;
+    font-weight: 500;
+}
+/* start home section*/
+.home {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg-image-28.jpg);
+    background-position: center;
+    background-size: cover;
+position: relative;
+}
+.home h1{
+    font-size: 4.5rem !important;
+}
+.home .home-bg-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg-image-29.jpg);
+    background-position: center;
+    background-size: cover;
+position: relative;
+}
+.home button{
+padding: 15px 20px;
+margin: 10px;
+}
+.btn1{
+    border: 2px solid transparent;
+    color: #fff;
+    background-color: #00c3da ;
+    transition: all 3s;
+}
+
+.btn2{
+    color: #fff;
+    background-color: transparent;
+   
+    border: 2px solid #dedede;
+    transition: all 0.5s;
+}
+.btn2:hover{
+    background-color: #fff;
+    color: #000;
+}
+.home .arrow{
+    top: 45%;
+    left: 0;  
+}
+.home .arrow .layer i:hover{
+    background-color: #fff;
+    color: #1f1f1f !important;
+}
+.home .arrow .layer i {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+/* ///////////////////////////////////// */
+
+.tittle h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #1f1f1f;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+}
+.tittle p span::after{
+content: '';
+animation: typing 4s  infinite;
+color: #00c3da ;
+}
+
+@keyframes typing {
+    0%{
+        content: "s|";
+    }
+    3%{
+        content: "so|";
+    }  6%{
+        content: "sof|";
+    }  9%{
+        content: "soft|";
+    }  12%{
+        content: "softw|";
+    }  15%{
+        content: "softwa|";
+    }  18%{
+        content: "softwar|";
+    }  21%{
+        content: "software|";
+    }  24%{
+        content: "softwa|";
+    }  27%{
+        content: "soft|";
+    }  30%{
+        content: "sof|";
+    }  33%{
+        content: "so|";
+    }  36%{
+        content: "s|";
+    }  39%{
+        content: "a|";
+    }  42%{
+        content: "ap|";
+    }  45%{
+        content: "app|";
+    }  48%{
+        content: "apps|";
+    }  51%{
+        content: "app|";
+    }  54%{
+        content: "ap|";
+    }  57%{
+        content: "a|";
+    }  60%{
+        content: "w|";
+    }
+    63%{
+        content: "we|";
+    } 66%{
+        content: "web|";
+    } 69%{
+        content: "webs|";
+    } 71%{
+        content: "websi";
+    } 74%{
+        content: "websit|";
+    } 77%{
+        content: "website|";
+    } 80%{
+        content: "websites|";
+    } 83%{
+        content: "website|";
+    } 86%{
+        content: "websit|";
+    } 89%{
+        content: "websi|";
+    } 92%{
+        content: "webs|";
+    } 95%{
+        content: "web|";
+    } 97%{
+        content: "we|";
+    } 100%{
+        content: "w|";
+    }
+}
+.about button{
+    border: 2px solid #dedede;
+    transition: all 0.5s;
+    background-color: transparent;
+    padding: 15px 20px;
+}
+.about button:hover{
+    color: #fff;
+    background-color: #000;
+}
+/* /////////////////////////////////////// */
+.team .tittle h2::before{
+    content: attr(data-bigletter);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: -1;
+    font-size: 2.5em;
+    top: -55px;
+    right: 47%;
+    opacity: 0.08;
+}
+   .team-img{
+        overflow: hidden;
+    }
+    .team-info h4{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .team-info span{
+        font-size: 13px;
+    }
+    .team-overlay{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 195, 218, 0.9);
+        transform: translateY(20px);
+        transition: all 0.3s;
+        opacity: 0;
+    }
+.team-img:hover .team-overlay{
+    transform: translateY(0);
+    opacity: 1;
+}
+/* ////////////////////////////////// */
+.services h4{
+    font-size: 13px;
+    text-transform: uppercase ;
+    font-weight: 700;
+}
+.services .overlay{
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background-color: #1f1f1f;
+opacity: 0.7;
+z-index: -1;
+}
+.services .content h2::before{
+    z-index: -1;
+    content: attr(data-bigletter);
+    font-size: 2em;
+    opacity: .06;
+    position: absolute;
+    top: 3.6em;
+    left: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.services  .item .circle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #dedede;
+}
+.services .item{
+    vertical-align: middle;
+    color: #dedede;
+}
+.services .content p{
+    color: #dedede  ;
+}
+/* /////////////////////////////////// */
+.price{
+    background-color: #f7f7f7 ;
+}
+.price .tittle h2::before{
+    z-index: 1;
+    content: attr(data-bigletter);
+    font-size: 2em;
+    opacity: 0.06;
+    position: absolute;
+    top: 4%;
+   right: 48%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.price .price-tittle {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  
+}
+.price .price-tittle h2 span{
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+}
+.price .price-tittle h2{
+font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+.price .price-tittle h4{
+    font-size: 13px;
+    font-weight: 400;
+    color: #1f1f1f;
+}
+.card {
+    border: 2px solid #fff;
+background-color: #fff;
+margin: 10px;
+width: 100%;
+}
+.price button {
+    padding: 10px 15px;
+    background-color: #00c3da;
+    border: transparent;
+    border-radius: 4px;
+}
+.price .card-body p{
+    color: #787878 !important;
+}
+.price .price-tittle h2.special{
+    color: #00c3da;
+}
+.price .price-tittle .perfect{
+max-width: fit-content;
+height: auto;
+background-color: #00c3da;
+top: 40px;
+right: 30px;
+border-radius: 15px;
+/* z-index: 4; */
+}
+.price .price-tittle .perfect span{
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    
+}
+/* ///////////////////////////////// */
+.testimonial{
+    background-color: #f7f7f7;
+}
+.tittle h6{
+    color: #1f1f1f;
+}
+.testimonial-content img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    top: -40px;
+    left: 43%; 
+}
+.testimonial i{
+    transition: all 0.5s;
+    color: #787878;
+}
+.testimonial button:hover i{
+color: #00c3da !important;
+}
+.testimonial-content span{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}
+.testimonial-content p{
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.testimonial-content {
+    margin: 20px 15%;
+    background-color: #fff;
+    padding: 20px 60px 20px;
+    border-radius: 10px;
+}
+.testimonial-content{
+    background-color: #fff;
+    padding: 75px 100px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    max-width: 750px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+/* ////////////////////////////////////////// */
+.conacts .tittle h2::before{
+    z-index: -1;
+    content: attr(data-bigletter);
+    font-size: 2em;
+    opacity: .06;
+    position: absolute;
+    top: -0.5em;
+    left: -0.15em;
+    text-align: center;
+    text-transform: uppercase
+}
+.conacts button{
+    color: #fff;
+    background-color: #00c3da;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+}
+.conacts label{
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.map-side iframe{
+    max-width: 100%;
+    filter: brightness(50%) contrast(1.2);
+}
+/* //////////////////////////////////////// */
